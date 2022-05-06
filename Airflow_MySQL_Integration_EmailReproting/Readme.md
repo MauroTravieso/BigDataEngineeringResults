@@ -16,8 +16,8 @@ Airflow application: Check file existence
 
 * *Data to be processed:* 
 
-|---|---|---|---|---|---|---|---|
 |InvoiceNo|StockCode|Description|Quantity|InvoiceDate|UnitPrice|CustomerID|Country|
+|---|---|---|---|---|---|---|---|
 |536365|71053|WHITE METAL LANTERN #$|6|01-12-2010 08:26,3.39|17850|United_Kingdom|
 |536365|84406B|CREAM CUPID HEARTS COAT HANGER|8|01-12-2010 08:26|2.75|17850|United_Kingdom|
 |536365|84029G|KNITTED UNION FLAG HOT WATER BOTTLE|6|01-12-2010 08:26|3.39|17850|United Kingdom|
@@ -31,8 +31,8 @@ Airflow application: Check file existence
 
 * *Data transformed:*
 
-|---|---|---|---|---|---|---|---|---|
 ||InvoiceNo|StockCode|Description|Quantity|InvoiceDate|UnitPrice|CustomerID|Country|
+|---|---|---|---|---|---|---|---|---|
 |0|536365|71053|WHITE METAL LANTERN|6|01-12-2010 08:26|3.39|17850.0|United_Kingdom|
 |1|536365|84406B|CREAM CUPID HEARTS COAT HANGER|8|01-12-2010 08:26|2.75|17850.0|United_Kingdom|
 |2|536365|84029G|KNITTED UNION FLAG HOT WATER BOTTLE|6|01-12-2010 08:26|3.39|17850.0|United Kingdom|
@@ -46,8 +46,8 @@ Airflow application: Check file existence
 
 * *Grouped data:*
 
-|---|---|---|---|
 |StockCode|Description|Country|total_price|
+|---|---|---|---|
 |10002|INFLATABLE POLITICAL GLOBE|France|40.8|
 |10002|INFLATABLE POLITICAL GLOBE|United Kingdom|10.2|
 |10125|MINI FUNKY DESIGN TAPES|United Kingdom|1.7|
