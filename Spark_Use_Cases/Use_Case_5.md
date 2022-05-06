@@ -26,7 +26,7 @@ Mauro Travieso
 
 **Implementation:**
 
-```
+```scala
 +-----------+--------------+--------------+
 |customer_id|customer_fname|customer_lname|
 +-----------+--------------+--------------+
@@ -40,7 +40,7 @@ only showing top 5 rows
 
 ```
 
-```
+```scala
 $ hdfs dfs -ls /user/spark/dataset/q5/output
 Found 5 items
 -rw-r--r--   3 ubuntu supergroup          0 2022-05-04 06:19 /user/spark/dataset/mock1/q5/output/_SUCCESS
@@ -50,7 +50,7 @@ Found 5 items
 -rw-r--r--   3 ubuntu supergroup      27508 2022-05-04 06:18 /user/spark/dataset/mock1/q5/output/part-00003-c8d10d06-7920-4a52-a05d-0186672f6d04-c000.snappy.parquet
 ```
 
-```
+```scala
 +-----------+--------------+--------------+
 |customer_id|customer_fname|customer_lname|
 +-----------+--------------+--------------+

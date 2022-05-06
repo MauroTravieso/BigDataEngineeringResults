@@ -19,7 +19,7 @@ Mauro Travieso
   
  **Implementation:**
  
-```
+```scala
 +----------+-------------------+--------------------+-------------------+-------------+--------------------+
 |product_id|product_category_id|        product_name|product_description|product_price|       product_image|
 +----------+-------------------+--------------------+-------------------+-------------+--------------------+
@@ -32,7 +32,7 @@ Mauro Travieso
 only showing top 5 rows
 ```
 
-```
+```scala
 scala> res.show()
 +----------+
 |     value|

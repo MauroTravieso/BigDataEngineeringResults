@@ -22,14 +22,14 @@ Mauro Travieso
 
 **Implementation:**
 
-```
+```scala
 root
  |-- customer_id: integer (nullable = true)
  |-- customer_name: string (nullable = true)
  |-- customer_city: string (nullable = true)
 ```
 
-```
+```scala
 scala> df.show(5)
 +-----------+-------------+-------------+
 |customer_id|customer_name|customer_city|
@@ -43,12 +43,12 @@ scala> df.show(5)
 only showing top 5 rows
 ```
 
-```
+```scala
 scala> df.count()
 res30: Long = 4584
 ```
 
-```
+```scala
 $ hdfs dfs -ls /user/spark/dataset/q4/output
 Found 5 items
 -rw-r--r--   3 ubuntu supergroup          0 2022-05-04 05:51 /user/spark/dataset/mock1/q4/output/_SUCCESS
@@ -58,7 +58,7 @@ Found 5 items
 -rw-r--r--   3 ubuntu supergroup       5329 2022-05-04 05:51 /user/spark/dataset/mock1/q4/output/part-00003-85505435-1cb6-4051-9298-7d67d1296726-c000.avro
 ```
 
-```
+```scala
 scala> res.show(5)
 +-----------+-------------+-------------+
 |customer_id|customer_name|customer_city|
@@ -72,7 +72,7 @@ scala> res.show(5)
 only showing top 5 rows
 ```
 
-```
+```scala
 scala> res.printSchema
 root
  |-- customer_id: integer (nullable = true)
@@ -80,7 +80,7 @@ root
  |-- customer_city: string (nullable = true)
 ```
 
-```
+```scala
 scala> res.count
 res35: Long = 4584
 ```
