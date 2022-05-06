@@ -60,7 +60,7 @@ Airflow application: Check file existence
 
 * *Process result screen captures:*
 
-![Airflow](../Images/1.png)
+![Airflow](./Images/1.png)
 
-![Airflow](../Images/2.png)
+![Airflow](./Images/2.png)
 

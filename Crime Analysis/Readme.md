@@ -126,5 +126,5 @@ Process finished with exit code 0
 
 # Dashboarding the results in Superset
 
-![Crime](../Images/crime-analysis-2001-to-present.jpg)
+![Crime](./Images/crime-analysis-2001-to-present.jpg)
 
