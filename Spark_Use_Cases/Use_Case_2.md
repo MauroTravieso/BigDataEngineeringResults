@@ -36,7 +36,7 @@ Mauro Travieso
 
 **Implementation:**
 
-```
+```scala
 scala> custDF.show(5)
 +----+------+------+---------+---------+--------------------+-------------+---+-----+
 | _c0|   _c1|   _c2|      _c3|      _c4|                 _c5|          _c6|_c7|  _c8|
@@ -49,12 +49,13 @@ scala> custDF.show(5)
 +----+------+------+---------+---------+--------------------+-------------+---+-----+
 only showing top 5 rows
 ```
-```
+
+```scala
 scala> custDF.count()
 res6: Long = 12435
 ```
 
-```
+```scala
 scala> ordersDF.show(5)
 +-----+--------------------+----+---------------+
 |  _c0|                 _c1| _c2|            _c3|
@@ -66,15 +67,14 @@ scala> ordersDF.show(5)
 |25007|2013-12-26 00:00:...|5603|         CLOSED|
 +-----+--------------------+----+---------------+
 only showing top 5 rows
-
 ```
 
-```
+```scala
 scala> ordersDF.count()
 res9: Long = 68890
 ```
 
-```
+```scala
 scala> res.show(5)
 +-----+--------------+-----------+
 |count|customer_fname|customer_id|
@@ -88,12 +88,12 @@ scala> res.show(5)
 only showing top 5 rows
 ```
 
-```
+```scala
 scala> res.count()
 res11: Long = 462
 ```
 
-```
+```scala
 scala> res.select("customer_fname").groupBy("customer_fname").count.sort(desc("count")).show()
 +--------------+-----+                                                          
 |customer_fname|count|
