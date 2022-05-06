@@ -1,3 +1,4 @@
+```
       ____              __
      / __/__  ___ _____/ /__
     _\ \/ _ \/ _ `/ __/  '_/
@@ -5,6 +6,7 @@
       /_/
          
 Using Scala version 2.12.10 (OpenJDK 64-Bit Server VM, Java 1.8.0_312)
+```
 
 ---
 
@@ -66,7 +68,7 @@ scala> df.count
 res1: Long = 68890  
 ```
 
-```
+```scala
 $ hdfs dfs -ls hdfs://localhost:9000/user/spark/dataset/output
 Found 5 items
 -rw-r--r--   3 ubuntu supergroup          0 2022-05-04 04:31 hdfs://localhost:9000/user/spark/dataset/q1/output/_SUCCESS
@@ -77,12 +79,12 @@ Found 5 items
 
 ```
  
-```
+```scala
 scala> val dist = res.select("order_status").distinct
 dist: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] = [order_status: string]
 ```
 
-```
+```scala
 scala> dist.count()
 res3: Long = 9  
 ```
