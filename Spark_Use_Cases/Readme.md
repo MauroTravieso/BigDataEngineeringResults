@@ -9,3 +9,6 @@ Mauro Travieso
 * Use Case 3
 * Use Case 4
 * Use Case 5
+* Use Case 6
+* Use Case 7
+* Use Case 8
